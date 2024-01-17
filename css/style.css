@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500&family=Roboto:wght@300&display=swap');
+
+
+body{
+    background-color: #F6CBB3;
+}
+
+.png{
+    background: none;
+    width: 150px;
+}
+
+header{
+    background-color: #DFA79A;
+    font-weight: bold;
+}
+
+.container-fluid{
+    background-color: #DFA79A;
+}
+
+.fotoPresentacion{
+    width: 25rem;
+}
+
+.grillaEpisodios{   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 0.5fr 1fr;
+    grid-template-areas: 
+            "tituloEpisodios tituloEpisodios"
+            "episodio1       episodio2"
+            "episodio3       episodio4"
+            "episodioT       episodioT"
+            "pie             pie"
+    ;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.episodio1{
+    grid-area: episodio1;
+
+}
+
+.episodio2{
+    grid-area: episodio2;
+}
+
+.episodio3{
+    grid-area: episodio3;
+}
+
+.episodio4{
+    grid-area: episodio4;
+}
+
+.episodioT{
+    grid-area: episodioT;
+}
+
+.tituloEpisodios{
+    grid-area: tituloEpisodios;
+}
+
+div a{
+    text-decoration: none;
+    color: #81614f;
+}
+
+.pie{
+    grid-area: pie;
+    background-color: #AF9177;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 1rem;;
+}
+
+.imagenEpisodios{
+    width: 300px;
+}
+
+footer h3{
+    color: #FCF6E6;
+    text-decoration: none;
+}
+
+.fotoPresentacion{
+    width: 400px;
+}
+
+.grillaSobrenosotros{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+            "tituloSobrenosotros tituloSobrenosotros tituloSobrenosotros"
+            "adri            pao            mariana"
+            "descripcionAdri descripcionPao descripcionMari"
+    ;
+    justify-items: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.tituloSobrenosotros{
+    grid-area: tituloSobrenosotros;
+    padding-top: 3rem;
+}
+.adri{
+    grid-area: adri;
+}
+.pao{
+    grid-area: pao;
+}
+.mariana{
+    grid-area: mariana;
+}
+.descripcionAdri{
+    grid-area: descripcionAdri;
+}
+.descripcionPao{
+    grid-area: descripcionPao;
+}
+.descripcionMari{
+    grid-area: descripcionMari;
+}
+
+.carousel{
+    width: 500px;
+}
+.img{
+    max-width: 100%;
+}
