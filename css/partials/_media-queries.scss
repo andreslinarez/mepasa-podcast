@@ -1,0 +1,177 @@
+main{
+    @media (max-width: 800px) {
+
+        .grillaSobrenosotros{   
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+            grid-template-areas: 
+                    "tituloSobrenosotros"
+                    "adri"
+                    "descripcionAdri"
+                    "pao"
+                    "descripcionPao"
+                    "mariana"
+                    "descripcionMari"
+            ;
+            justify-items: center;
+            align-items: start;
+            gap: 1rem;
+        
+            .tituloSobrenosotros{
+                grid-area: tituloSobrenosotros;
+                padding-top: 1rem;
+            }
+        
+            .adri{
+                grid-area: adri;
+        
+                .fotoPresentacion{
+                        width: 300px;
+                        max-width: 100%;
+                }
+            }
+        
+            .descripcionAdri{
+                grid-area: descripcionAdri;
+            }
+        
+            .pao{
+                grid-area: pao;
+        
+                .fotoPresentacion{
+                        width: 300px;
+                        max-width: 100%;
+                }
+            }
+        
+            .descripcionPao{
+                grid-area: descripcionPao;
+            }
+        
+            .mariana{
+                grid-area: mariana;
+        
+                .fotoPresentacion{
+                    width: 300px;
+                    max-width: 100%;
+                }
+            }
+        
+            .descripcionMari{
+                grid-area: descripcionMari;
+            }
+        }
+        
+        
+        .grillaEpisodios{   
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+            grid-template-areas: 
+                    "tituloEpisodios"
+                    "episodio1"
+                    "episodio2"
+                    "episodio3"
+                    "episodio4"
+                    "episodioT"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 1rem;
+        
+            .tituloEpisodios{
+                grid-area: tituloEpisodios;
+        
+                .imagenEpisodios{
+                    width: 300px;
+        
+                    .img{
+                        width: 400px;
+                    }
+                }            
+            }
+        
+            .episodio1{
+                grid-area: episodio1;
+            
+            }
+            
+            .episodio2{
+                grid-area: episodio2;
+            }
+            
+            .episodio3{
+                grid-area: episodio3;
+            }
+            
+            .episodio4{
+                grid-area: episodio4;
+            }
+            
+            .episodioT{
+                grid-area: episodioT;
+            }
+            
+         }
+         .grillaInicio{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 1fr 0.1fr 1fr 0.1fr;
+            grid-template-areas:
+            "imagenInicio"
+            "descripcionInicio"
+            "tituloInicio"
+            "carouselInicio"
+            "textoFinal"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 0.5rem;
+    
+            .imagenInicio{
+                grid-area: imagenInicio;
+    
+                .img{
+                    width: 500px;
+                    max-width: 100%;
+                }
+            }
+    
+            .bienvenido {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1.1em;
+                line-height: 1.6em;
+            }
+    
+            .tituloInicio{
+                grid-area: tituloInicio;
+            }
+    
+    
+            .descripcionInicio{
+                grid-area: descripcionInicio;
+            }
+    
+            .carouselInicio{
+                grid-area: carouselInicio;
+                width: 80%;
+                max-width: 98%;
+            }
+    
+            .textoFinal{
+                grid-area: textoFinal;
+                h2{
+                    padding: 1rem;
+                }
+            }
+        }
+        }
+        
+}

@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6CBB3;
+}
+
+header {
+  background-color: #DFA79A;
+  font-weight: bold;
+}
+header .png {
+  background: none;
+  width: 150px;
+  max-width: 100%;
+}
+header .container-fluid {
+  background-color: #DFA79A;
+}
+
+footer .pie {
+  grid-area: pie;
+  background-color: #AF9177;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem;
+}
+footer .pie .copyright h3 {
+  color: #FCF6E6;
+  text-decoration: none;
+}
+footer .pie .logoFooter .png {
+  width: 150px;
+  max-width: 100%;
+}
+
+main .png {
+  background: none;
+  width: 150px;
+  max-width: 100%;
+}
+main .grillaProductos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "" "" "";
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .grillaInicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.1fr;
+  grid-template-areas: "imagenInicio      tituloInicio" "descripcionInicio carouselInicio" "textoFinal        textoFinal";
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .grillaInicio .imagenInicio {
+  grid-area: imagenInicio;
+}
+main .grillaInicio .imagenInicio .img {
+  width: 500px;
+  max-width: 100%;
+}
+main .grillaInicio .bienvenido {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+main .grillaInicio p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+main .grillaInicio .tituloInicio {
+  grid-area: tituloInicio;
+}
+main .grillaInicio .descripcionInicio {
+  grid-area: descripcionInicio;
+}
+main .grillaInicio .carouselInicio {
+  grid-area: carouselInicio;
+  width: 70%;
+  max-width: 98%;
+}
+main .grillaInicio .textoFinal {
+  grid-area: textoFinal;
+}
+main .grillaInicio .textoFinal h2 {
+  padding: 1rem;
+}
+main .grillaSobrenosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas: "tituloSobrenosotros tituloSobrenosotros tituloSobrenosotros" "adri                 pao                mariana" "descripcionAdri      descripcionPao     descripcionMari";
+  justify-items: center;
+  align-items: start;
+  gap: 1rem;
+}
+main .grillaSobrenosotros .tituloSobrenosotros {
+  grid-area: tituloSobrenosotros;
+  padding-top: 3rem;
+}
+main .grillaSobrenosotros .tituloSobrenosotros .mppSobrenosotros {
+  text-align: center;
+}
+main .grillaSobrenosotros .adri {
+  grid-area: adri;
+}
+main .grillaSobrenosotros .adri .fotoPresentacion {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 2cap;
+}
+main .grillaSobrenosotros .descripcionAdri {
+  grid-area: descripcionAdri;
+  padding: 0rem 4rem 1rem 4rem;
+}
+main .grillaSobrenosotros .pao {
+  grid-area: pao;
+}
+main .grillaSobrenosotros .pao .fotoPresentacion {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 2cap;
+}
+main .grillaSobrenosotros .descripcionPao {
+  grid-area: descripcionPao;
+  padding: 0rem 4rem 1rem 4rem;
+}
+main .grillaSobrenosotros .mariana {
+  grid-area: mariana;
+}
+main .grillaSobrenosotros .mariana .fotoPresentacion {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 2cap;
+}
+main .grillaSobrenosotros .descripcionMari {
+  grid-area: descripcionMari;
+  padding: 0rem 4rem 1rem 4rem;
+}
+main .grillaEpisodios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr 0.5fr 1fr;
+  grid-template-areas: "tituloEpisodios tituloEpisodios" "episodio1       episodio2" "episodio3       episodio4" "episodioT       episodioT" "pie             pie";
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .grillaEpisodios .tituloEpisodios {
+  grid-area: tituloEpisodios;
+}
+main .grillaEpisodios .tituloEpisodios .imagenEpisodios {
+  width: 300px;
+}
+main .grillaEpisodios .tituloEpisodios .imagenEpisodios .img {
+  width: 400px;
+}
+main .grillaEpisodios .episodio1 {
+  grid-area: episodio1;
+}
+main .grillaEpisodios .episodio2 {
+  grid-area: episodio2;
+}
+main .grillaEpisodios .episodio3 {
+  grid-area: episodio3;
+}
+main .grillaEpisodios .episodio4 {
+  grid-area: episodio4;
+}
+main .grillaEpisodios .episodioT {
+  grid-area: episodioT;
+}
+
+div a {
+  text-decoration: none;
+  color: #81614f;
+}
+
+@media (max-width: 800px) {
+  main .grillaSobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-areas: "tituloSobrenosotros" "adri" "descripcionAdri" "pao" "descripcionPao" "mariana" "descripcionMari";
+    justify-items: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  main .grillaSobrenosotros .tituloSobrenosotros {
+    grid-area: tituloSobrenosotros;
+    padding-top: 1rem;
+  }
+  main .grillaSobrenosotros .adri {
+    grid-area: adri;
+  }
+  main .grillaSobrenosotros .adri .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionAdri {
+    grid-area: descripcionAdri;
+  }
+  main .grillaSobrenosotros .pao {
+    grid-area: pao;
+  }
+  main .grillaSobrenosotros .pao .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionPao {
+    grid-area: descripcionPao;
+  }
+  main .grillaSobrenosotros .mariana {
+    grid-area: mariana;
+  }
+  main .grillaSobrenosotros .mariana .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionMari {
+    grid-area: descripcionMari;
+  }
+  main .grillaEpisodios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "tituloEpisodios" "episodio1" "episodio2" "episodio3" "episodio4" "episodioT";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .grillaEpisodios .tituloEpisodios {
+    grid-area: tituloEpisodios;
+  }
+  main .grillaEpisodios .tituloEpisodios .imagenEpisodios {
+    width: 300px;
+  }
+  main .grillaEpisodios .tituloEpisodios .imagenEpisodios .img {
+    width: 400px;
+  }
+  main .grillaEpisodios .episodio1 {
+    grid-area: episodio1;
+  }
+  main .grillaEpisodios .episodio2 {
+    grid-area: episodio2;
+  }
+  main .grillaEpisodios .episodio3 {
+    grid-area: episodio3;
+  }
+  main .grillaEpisodios .episodio4 {
+    grid-area: episodio4;
+  }
+  main .grillaEpisodios .episodioT {
+    grid-area: episodioT;
+  }
+  main .grillaInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-areas: "imagenInicio" "descripcionInicio" "tituloInicio" "carouselInicio" "textoFinal";
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  main .grillaInicio .imagenInicio {
+    grid-area: imagenInicio;
+  }
+  main .grillaInicio .imagenInicio .img {
+    width: 500px;
+    max-width: 100%;
+  }
+  main .grillaInicio .bienvenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  main .grillaInicio p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+  main .grillaInicio .tituloInicio {
+    grid-area: tituloInicio;
+  }
+  main .grillaInicio .descripcionInicio {
+    grid-area: descripcionInicio;
+  }
+  main .grillaInicio .carouselInicio {
+    grid-area: carouselInicio;
+    width: 80%;
+    max-width: 98%;
+  }
+  main .grillaInicio .textoFinal {
+    grid-area: textoFinal;
+  }
+  main .grillaInicio .textoFinal h2 {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */

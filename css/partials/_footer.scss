@@ -1,0 +1,31 @@
+footer{
+    
+    .pie{
+            grid-area: pie;
+            background-color: #AF9177;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 1rem;
+
+            .copyright{
+                
+                h3{
+                    color: #FCF6E6;
+                    text-decoration: none;
+                }
+            }
+
+    .logoFooter{
+
+        .png{
+            width: 150px;
+            max-width: 100%;
+        }
+    }
+
+    }
+}
