@@ -122,10 +122,10 @@ main .grillaSobrenosotros .adri .fotoPresentacion {
   width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+  transition: 1s;
 }
 main .grillaSobrenosotros .adri .fotoPresentacion:hover {
   transform: scale(1.2);
-  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionAdri {
   grid-area: descripcionAdri;
@@ -138,10 +138,10 @@ main .grillaSobrenosotros .pao .fotoPresentacion {
   width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+  transition: 1s;
 }
 main .grillaSobrenosotros .pao .fotoPresentacion:hover {
   transform: scale(1.2);
-  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionPao {
   grid-area: descripcionPao;
@@ -154,10 +154,10 @@ main .grillaSobrenosotros .mariana .fotoPresentacion {
   width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+  transition: 1s;
 }
 main .grillaSobrenosotros .mariana .fotoPresentacion:hover {
   transform: scale(1.2);
-  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionMari {
   grid-area: descripcionMari;
