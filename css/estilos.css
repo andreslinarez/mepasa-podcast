@@ -87,6 +87,7 @@ main .grillaInicio .tituloInicio {
 }
 main .grillaInicio .descripcionInicio {
   grid-area: descripcionInicio;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.507), rgba(246, 203, 179, 0));
 }
 main .grillaInicio .carouselInicio {
   grid-area: carouselInicio;
@@ -106,7 +107,6 @@ main .grillaSobrenosotros {
   grid-template-areas: "tituloSobrenosotros tituloSobrenosotros tituloSobrenosotros" "adri                 pao                mariana" "descripcionAdri      descripcionPao     descripcionMari";
   justify-items: center;
   align-items: start;
-  gap: 1rem;
 }
 main .grillaSobrenosotros .tituloSobrenosotros {
   grid-area: tituloSobrenosotros;
@@ -119,9 +119,13 @@ main .grillaSobrenosotros .adri {
   grid-area: adri;
 }
 main .grillaSobrenosotros .adri .fotoPresentacion {
-  width: 300px;
+  width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+}
+main .grillaSobrenosotros .adri .fotoPresentacion:hover {
+  transform: scale(1.2);
+  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionAdri {
   grid-area: descripcionAdri;
@@ -131,9 +135,13 @@ main .grillaSobrenosotros .pao {
   grid-area: pao;
 }
 main .grillaSobrenosotros .pao .fotoPresentacion {
-  width: 300px;
+  width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+}
+main .grillaSobrenosotros .pao .fotoPresentacion:hover {
+  transform: scale(1.2);
+  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionPao {
   grid-area: descripcionPao;
@@ -143,9 +151,13 @@ main .grillaSobrenosotros .mariana {
   grid-area: mariana;
 }
 main .grillaSobrenosotros .mariana .fotoPresentacion {
-  width: 300px;
+  width: 400px;
   max-width: 100%;
   border-radius: 2cap;
+}
+main .grillaSobrenosotros .mariana .fotoPresentacion:hover {
+  transform: scale(1.2);
+  transition: 1s;
 }
 main .grillaSobrenosotros .descripcionMari {
   grid-area: descripcionMari;
@@ -154,20 +166,25 @@ main .grillaSobrenosotros .descripcionMari {
 main .grillaEpisodios {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr 3fr 0.5fr 1fr;
-  grid-template-areas: "tituloEpisodios tituloEpisodios" "episodio1       episodio2" "episodio3       episodio4" "episodioT       episodioT" "pie             pie";
+  grid-template-rows: 1fr 3fr 3fr 0.5fr;
+  grid-template-areas: "tituloEpisodios tituloEpisodios" "episodio1       episodio2" "episodio3       episodio4" "episodioT       episodioT";
   justify-items: center;
   align-items: center;
   gap: 1rem;
+  transition: 1s;
 }
 main .grillaEpisodios .tituloEpisodios {
   grid-area: tituloEpisodios;
 }
 main .grillaEpisodios .tituloEpisodios .imagenEpisodios {
   width: 300px;
+  transition: 0.5s;
 }
 main .grillaEpisodios .tituloEpisodios .imagenEpisodios .img {
   width: 400px;
+}
+main .grillaEpisodios .tituloEpisodios .imagenEpisodios:hover {
+  transform: scale(1.2);
 }
 main .grillaEpisodios .episodio1 {
   grid-area: episodio1;
