@@ -60,7 +60,19 @@ main{
 
         .descripcionInicio{
             grid-area: descripcionInicio;
-            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.507), #f6cbb300);
+
+            .bienvenido{
+                transition: 1s;
+                border-radius: 2cap;
+                border-color: #F6CBB3;
+                background-image: radial-gradient(circle, rgba(255, 255, 255, 0.507), #f6cbb300);
+                margin: 1rem;
+                }
+            }
+
+            .bienvenido:hover{
+                background-color: rgba(255, 255, 255, 0.253);
+                border-radius: 4cap;
         }
 
         .carouselInicio{
@@ -73,6 +85,9 @@ main{
             grid-area: textoFinal;
             h2{
                 padding: 1rem;
+                a:hover{
+                    color: #4d392e;
+                }
             }
         }
     }

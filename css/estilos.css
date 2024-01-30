@@ -87,7 +87,17 @@ main .grillaInicio .tituloInicio {
 }
 main .grillaInicio .descripcionInicio {
   grid-area: descripcionInicio;
+}
+main .grillaInicio .descripcionInicio .bienvenido {
+  transition: 1s;
+  border-radius: 2cap;
+  border-color: #F6CBB3;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.507), rgba(246, 203, 179, 0));
+  margin: 1rem;
+}
+main .grillaInicio .bienvenido:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+  border-radius: 4cap;
 }
 main .grillaInicio .carouselInicio {
   grid-area: carouselInicio;
@@ -99,6 +109,9 @@ main .grillaInicio .textoFinal {
 }
 main .grillaInicio .textoFinal h2 {
   padding: 1rem;
+}
+main .grillaInicio .textoFinal h2 a:hover {
+  color: #4d392e;
 }
 main .grillaSobrenosotros {
   display: grid;
