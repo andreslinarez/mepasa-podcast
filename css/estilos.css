@@ -49,12 +49,39 @@ main .png {
 }
 main .grillaProductos {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "" "" "";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-areas: "tituloProductos tituloProductos textoProductos" "cursoRelaciones cursoParejas cursoPersonal" "libroParejas libroRelacionarse libroPersonal";
   justify-items: center;
   align-items: center;
-  gap: 1rem;
+  padding-bottom: 1rem;
+}
+main .grillaProductos .vacioProductos {
+  grid-area: vacioProductos;
+}
+main .grillaProductos .tituloProductos {
+  grid-area: tituloProductos;
+}
+main .grillaProductos .textoProductos {
+  grid-area: textoProductos;
+}
+main .grillaProductos .cursoRelaciones {
+  grid-area: cursoRelaciones;
+}
+main .grillaProductos .cursoParejas {
+  grid-area: cursoParejas;
+}
+main .grillaProductos .cursoPersonal {
+  grid-area: cursoPersonal;
+}
+main .grillaProductos .libroParejas {
+  grid-area: libroParejas;
+}
+main .grillaProductos .libreoRelacionarse {
+  grid-area: libroRelacionarse;
+}
+main .grillaProductos .libroPersonal {
+  grid-area: libroPersonal;
 }
 main .grillaInicio {
   display: grid;
@@ -132,7 +159,7 @@ main .grillaSobrenosotros .tituloSobrenosotros .mppSobrenosotros {
   text-align: center;
 }
 main .grillaSobrenosotros .tituloSobrenosotros .mppSobrenosotros .img {
-  width: 400px;
+  width: 300px;
 }
 main .grillaSobrenosotros .adri {
   grid-area: adri;
@@ -207,7 +234,7 @@ main .grillaContacto .formulario {
 main .grillaEpisodios {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 3fr 3fr 0.5fr;
+  grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
   grid-template-areas: "tituloEpisodios tituloEpisodios" "episodio1       episodio2" "episodio3       episodio4" "episodioT       episodioT";
   justify-items: center;
   align-items: center;
