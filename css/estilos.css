@@ -131,6 +131,9 @@ main .grillaSobrenosotros .tituloSobrenosotros {
 main .grillaSobrenosotros .tituloSobrenosotros .mppSobrenosotros {
   text-align: center;
 }
+main .grillaSobrenosotros .tituloSobrenosotros .mppSobrenosotros .img {
+  width: 400px;
+}
 main .grillaSobrenosotros .adri {
   grid-area: adri;
 }
