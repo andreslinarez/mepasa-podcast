@@ -182,6 +182,28 @@ main .grillaSobrenosotros .descripcionMari {
   grid-area: descripcionMari;
   padding: 0rem 4rem 1rem 4rem;
 }
+main .grillaContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-areas: "redesSociales  tituloContacto" "redesSociales  formulario";
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  transition: 1s;
+}
+main .grillaContacto .tituloContacto {
+  grid-area: tituloContacto;
+}
+main .grillaContacto .redesSociales {
+  grid-area: redesSociales;
+}
+main .grillaContacto .redesSociales .iconoSociales {
+  width: 100px;
+}
+main .grillaContacto .formulario {
+  grid-area: formulario;
+}
 main .grillaEpisodios {
   display: grid;
   grid-template-columns: 1fr 1fr;

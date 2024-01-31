@@ -181,6 +181,48 @@ main{
                 }
     }
 
+    .grillaContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-areas:
+        "redesSociales  tituloContacto"
+        "redesSociales  formulario"
+        ;
+        justify-items: center;
+        align-items: center;
+        gap: 1rem;
+        transition: 1s;
+
+        .tituloContacto{
+            grid-area: tituloContacto;
+
+            .h1{}
+        }
+
+        .redesSociales{
+            grid-area: redesSociales;
+
+            .iconoSociales{
+                width: 100px;
+            }
+        }
+
+        .formulario{
+            grid-area: formulario;
+
+            .nombreFormulario{}
+
+            .emailFormulario{}
+
+            .textoFormulario{}
+
+            .enviarFormulario{}
+
+            .restablecerFormulario{}
+        }
+    }
+
     .grillaEpisodios{   
         display: grid;
         grid-template-columns: 1fr 1fr;
