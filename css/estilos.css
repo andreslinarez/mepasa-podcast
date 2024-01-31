@@ -104,6 +104,9 @@ main .grillaInicio .carouselInicio {
   width: 70%;
   max-width: 98%;
 }
+main .grillaInicio .carouselInicio .foticoGrupo {
+  border-radius: 2cap;
+}
 main .grillaInicio .textoFinal {
   grid-area: textoFinal;
 }

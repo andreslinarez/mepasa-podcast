@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo2.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Sobre Nosotros</title>
@@ -51,31 +52,58 @@
                 <h2>El Team</h2> 
               </div>   
             </div>
-            <div class="adri">
+            <div class="adri" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1500">
                 <h3>Adri</h3>
-                <img class="fotoPresentacion img" src="../img/adriana.jpg" alt="Adriana">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner fotoPresentacion img">
+                    <div class="carousel-item active">
+                      <img src="../img/adriana.jpg" class="d-block w-100" alt="Fotico Cool">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/numero5.jpg" class="d-block w-100" alt="Fotico chistosa">
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="descripcionAdri">
+            <div class="descripcionAdri" data-aos="fade-up" data-aos-duration="1500">
                 <p>¡Hola gente linda! Soy Adri, en este breve texto comparto un poco sobre mi. Sin embargo, les prometo que me conocerán aún más a fondo a lo largo de los episodios de nuestro podcast "Me Pasa".</p>
               
                 <p>En los episodios, podrán escucharme riendo a carcajadas, porque ese suele ser mi mood. Puede que cuente uno que otro chiste, ya que creo que el humor es un ingrediente esencial para afrontar la vida. Pero también compartiré la perspectiva de una Adri que tiene muchas experiencias y pensamientos valiosos para ofrecer.</p>
               
                 <p>Este proyecto me llena de emoción y esperanza, y sinceramente, estoy ansiosa por compartirlo con todos ustedes. Espero que disfruten cada episodio tanto como yo disfruto creándolos. ¡Bienvenidos a "Me Pasa"!</p>
             </div>
-            <div class="pao">
+            <div class="pao" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1500">
                 <h3>Pao</h3>
-                <img class="fotoPresentacion img" src="../img/paola.jpg" alt="Paola">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner fotoPresentacion img">
+                    <div class="carousel-item active">
+                      <img src="../img/paola.jpg" class="d-block w-100" alt="Fotico Cool">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/daria.jpeg" class="d-block w-100" alt="Fotico chistosa">
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div  class="descripcionPao">
+            <div  class="descripcionPao" data-aos="fade-up" data-aos-duration="1500">
               <p>¡Hola a todos! Yo soy Paola, y tengo 25 años. Estoy radiante por ser parte de este proyecto de podcast, pero aún más emocionada por la valiosa amistad que he construido con las chicas. Les compartí un poco sobre mí aquí, pero a medida que avancemos, irán conociéndome más a fondo.</p>
 
               <p>Este proyecto significa mucho para mí, y espero que disfruten tanto como yo al ser parte de "Me Pasa". ¡Bienvenidos a este espacio de reflexión y conexión!</p>
             </div>
-            <div class="mariana">
+            <div class="mariana" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1500">
                 <h3>Mari</h3>
-                <img class="fotoPresentacion img" src="../img/mariana.jpg" alt="Mariana">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner fotoPresentacion img">
+                    <div class="carousel-item active">
+                      <img src="../img/mariana.jpg" class="d-block w-100" alt="Fotico Cool">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/reggie.jpg" class="d-block w-100" alt="Fotico chistosa">
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="descripcionMari">
+            <div class="descripcionMari" data-aos="fade-up" data-aos-duration="1500">
               <p>Bueeenaaas bueeenaaas!! Soy Mari✨ y estoy encantada de darles una rápida presentación para que me conozcan un poco más. Si no se han dado cuenta de que hablo hasta por los codos, seguro en los siguientes capítulos se darán cuenta 😂. Soy una apasionada de los planes con amigas, y más aún si nos permiten reflexionar, cuestionar, reírnos y crecer juntas.</p>
               <p>Cada episodio de este proyecto es un pedacito de mí que espero que los haga sentir parte de algo especial. ¿Listos para decir "MEEE PASAAA" conmigo? 🤭 ¡Nos vemos en cada nuevo episodio!</p>
               </div>
@@ -92,6 +120,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
