@@ -275,7 +275,65 @@ div a {
   color: #81614f;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
+  main .grillaContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-areas: "tituloContacto" "formulario" "redesSociales";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    transition: 1s;
+  }
+  main .grillaContacto .tituloContacto {
+    grid-area: tituloContacto;
+  }
+  main .grillaContacto .redesSociales {
+    grid-area: redesSociales;
+  }
+  main .grillaContacto .redesSociales .iconoSociales {
+    width: 100px;
+  }
+  main .grillaContacto .formulario {
+    grid-area: formulario;
+  }
+  main .grillaProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "tituloProductos" "textoProductos" "cursoRelaciones" "cursoParejas" "cursoPersonal" "libroParejas" "libroRelacionarse" "libroPersonal";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .grillaProductos .vacioProductos {
+    grid-area: vacioProductos;
+  }
+  main .grillaProductos .tituloProductos {
+    grid-area: tituloProductos;
+  }
+  main .grillaProductos .textoProductos {
+    grid-area: textoProductos;
+  }
+  main .grillaProductos .cursoRelaciones {
+    grid-area: cursoRelaciones;
+  }
+  main .grillaProductos .cursoParejas {
+    grid-area: cursoParejas;
+  }
+  main .grillaProductos .cursoPersonal {
+    grid-area: cursoPersonal;
+  }
+  main .grillaProductos .libroParejas {
+    grid-area: libroParejas;
+  }
+  main .grillaProductos .libreoRelacionarse {
+    grid-area: libroRelacionarse;
+  }
+  main .grillaProductos .libroPersonal {
+    grid-area: libroPersonal;
+  }
   main .grillaSobrenosotros {
     display: grid;
     grid-template-columns: 1fr;

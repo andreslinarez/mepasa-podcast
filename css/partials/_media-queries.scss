@@ -1,5 +1,94 @@
 main{
-    @media (max-width: 800px) {
+    @media (max-width: 920px) {
+
+        .grillaContacto{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 1fr 0.5fr;
+            grid-template-areas:
+            "tituloContacto"
+            "formulario"
+            "redesSociales"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 1rem;
+            transition: 1s;
+    
+            .tituloContacto{
+                grid-area: tituloContacto;
+    
+            }
+    
+            .redesSociales{
+                grid-area: redesSociales;
+    
+                .iconoSociales{
+                    width: 100px;
+                }
+            }
+    
+            .formulario{
+                grid-area: formulario;
+    
+            }
+        }
+
+        .grillaProductos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "tituloProductos"
+            "textoProductos"
+            "cursoRelaciones"
+            "cursoParejas"
+            "cursoPersonal"
+            "libroParejas"
+            "libroRelacionarse"
+            "libroPersonal"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 1rem;
+
+            .vacioProductos{
+                grid-area: vacioProductos;
+            }
+
+            .tituloProductos{
+                grid-area: tituloProductos;
+            }
+
+            .textoProductos{
+                grid-area: textoProductos;
+            }
+
+            .cursoRelaciones{
+                grid-area: cursoRelaciones;
+            }
+
+            .cursoParejas{
+                grid-area: cursoParejas;
+            }
+
+            .cursoPersonal{
+                grid-area: cursoPersonal;
+            }
+
+            .libroParejas{
+                grid-area: libroParejas;
+            }
+
+            .libreoRelacionarse{
+                grid-area: libroRelacionarse;
+            }
+
+            .libroPersonal{
+                grid-area: libroPersonal;
+            }
+
+        }
 
         .grillaSobrenosotros{   
             display: grid;
