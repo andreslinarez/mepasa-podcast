@@ -1,5 +1,5 @@
 header{
-    background-color: #DFA79A;
+    background-color: $colorNav;
     font-weight: bold;
 
     .png{
@@ -9,6 +9,6 @@ header{
     }
 
     .container-fluid{
-        background-color: #DFA79A;
+        background-color: $colorNav;
     }
 }

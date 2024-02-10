@@ -50,8 +50,8 @@ main .png {
 main .grillaProductos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1fr 1fr;
-  grid-template-areas: "tituloProductos tituloProductos textoProductos" "cursoRelaciones cursoParejas cursoPersonal" "libroParejas libroRelacionarse libroPersonal";
+  grid-template-rows: 0.3fr 0.2fr 1fr 1fr;
+  grid-template-areas: "tituloProductos tituloProductos tituloProductos" "textoProductos  textoProductos  textoProductos" "cursoRelaciones cursoParejas cursoPersonal" "libroParejas libroRelacionarse libroPersonal";
   justify-items: center;
   align-items: center;
   padding-bottom: 1rem;
@@ -228,8 +228,33 @@ main .grillaContacto .redesSociales {
 main .grillaContacto .redesSociales .iconoSociales {
   width: 100px;
 }
+main .grillaContacto .redesSociales .youtube {
+  width: 105px;
+}
+main .grillaContacto .redesSociales .spotify {
+  width: 88px;
+}
 main .grillaContacto .formulario {
   grid-area: formulario;
+}
+main .grillaContacto .formulario .nombreFormulario {
+  width: 100px;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+main .grillaContacto .formulario .emailFormulario {
+  width: 100px;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+main .grillaContacto .formulario .botonesContacto {
+  display: flex;
+}
+main .grillaContacto .formulario .botonesContacto .enviarFormulario {
+  padding: 1rem;
+  border: 1rem;
+}
+main .grillaContacto .formulario .botonesContacto .restablecerFormulario {
+  padding: 1rem;
+  border: 1rem;
 }
 main .grillaEpisodios {
   display: grid;
@@ -275,6 +300,87 @@ div a {
   color: #81614f;
 }
 
+@media (max-width: 1200px) {
+  main .grillaSobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+    grid-template-areas: "tituloSobrenosotros" "adri" "descripcionAdri" "pao" "descripcionPao" "mariana" "descripcionMari";
+    justify-items: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  main .grillaSobrenosotros .tituloSobrenosotros {
+    grid-area: tituloSobrenosotros;
+    padding-top: 1rem;
+  }
+  main .grillaSobrenosotros .adri {
+    grid-area: adri;
+  }
+  main .grillaSobrenosotros .adri .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionAdri {
+    grid-area: descripcionAdri;
+  }
+  main .grillaSobrenosotros .pao {
+    grid-area: pao;
+  }
+  main .grillaSobrenosotros .pao .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionPao {
+    grid-area: descripcionPao;
+  }
+  main .grillaSobrenosotros .mariana {
+    grid-area: mariana;
+  }
+  main .grillaSobrenosotros .mariana .fotoPresentacion {
+    width: 300px;
+    max-width: 100%;
+  }
+  main .grillaSobrenosotros .descripcionMari {
+    grid-area: descripcionMari;
+  }
+  main .grillaProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "tituloProductos tituloProductos" "textoProductos  textoProductos" "cursoRelaciones libroRelacionarse" "cursoPersonal   libroPersonal" "cursoParejas    libroParejas";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .grillaProductos .vacioProductos {
+    grid-area: vacioProductos;
+  }
+  main .grillaProductos .tituloProductos {
+    grid-area: tituloProductos;
+  }
+  main .grillaProductos .textoProductos {
+    grid-area: textoProductos;
+  }
+  main .grillaProductos .cursoRelaciones {
+    grid-area: cursoRelaciones;
+  }
+  main .grillaProductos .cursoParejas {
+    grid-area: cursoParejas;
+  }
+  main .grillaProductos .cursoPersonal {
+    grid-area: cursoPersonal;
+  }
+  main .grillaProductos .libroParejas {
+    grid-area: libroParejas;
+  }
+  main .grillaProductos .libreoRelacionarse {
+    grid-area: libroRelacionarse;
+  }
+  main .grillaProductos .libroPersonal {
+    grid-area: libroPersonal;
+  }
+}
 @media (max-width: 920px) {
   main .grillaContacto {
     display: grid;
@@ -333,49 +439,6 @@ div a {
   }
   main .grillaProductos .libroPersonal {
     grid-area: libroPersonal;
-  }
-  main .grillaSobrenosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
-    grid-template-areas: "tituloSobrenosotros" "adri" "descripcionAdri" "pao" "descripcionPao" "mariana" "descripcionMari";
-    justify-items: center;
-    align-items: start;
-    gap: 1rem;
-  }
-  main .grillaSobrenosotros .tituloSobrenosotros {
-    grid-area: tituloSobrenosotros;
-    padding-top: 1rem;
-  }
-  main .grillaSobrenosotros .adri {
-    grid-area: adri;
-  }
-  main .grillaSobrenosotros .adri .fotoPresentacion {
-    width: 300px;
-    max-width: 100%;
-  }
-  main .grillaSobrenosotros .descripcionAdri {
-    grid-area: descripcionAdri;
-  }
-  main .grillaSobrenosotros .pao {
-    grid-area: pao;
-  }
-  main .grillaSobrenosotros .pao .fotoPresentacion {
-    width: 300px;
-    max-width: 100%;
-  }
-  main .grillaSobrenosotros .descripcionPao {
-    grid-area: descripcionPao;
-  }
-  main .grillaSobrenosotros .mariana {
-    grid-area: mariana;
-  }
-  main .grillaSobrenosotros .mariana .fotoPresentacion {
-    width: 300px;
-    max-width: 100%;
-  }
-  main .grillaSobrenosotros .descripcionMari {
-    grid-area: descripcionMari;
   }
   main .grillaEpisodios {
     display: grid;

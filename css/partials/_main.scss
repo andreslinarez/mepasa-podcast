@@ -8,9 +8,10 @@ main{
     .grillaProductos{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.2fr 1fr 1fr;
         grid-template-areas:
-        "tituloProductos tituloProductos textoProductos"
+        "tituloProductos tituloProductos tituloProductos"
+        "textoProductos  textoProductos  textoProductos"
         "cursoRelaciones cursoParejas cursoPersonal"
         "libroParejas libroRelacionarse libroPersonal"
         ;
@@ -161,7 +162,7 @@ main{
             grid-area: adri;
 
             .fotoPresentacion{
-                    width: 400px;
+                    width: $tamañoImagenSobrenosotros;
                     max-width: 100%;
                     border-radius: 2cap;
                     transition: 1s;
@@ -181,7 +182,7 @@ main{
             grid-area: pao;
 
             .fotoPresentacion{
-                    width: 400px;
+                    width: $tamañoImagenSobrenosotros;
                     max-width: 100%;
                     border-radius: 2cap;
                     transition: 1s;
@@ -200,7 +201,7 @@ main{
             grid-area: mariana;
 
             .fotoPresentacion{
-                width: 400px;
+                width: $tamañoImagenSobrenosotros;
                 max-width: 100%;
                 border-radius: 2cap;
                 transition: 1s;
@@ -241,10 +242,42 @@ main{
             .iconoSociales{
                 width: 100px;
             }
+
+            .youtube{
+                width: 105px;
+            }
+
+            .spotify{
+                width: 88px;
+            }
         }
 
         .formulario{
             grid-area: formulario;
+
+            .nombreFormulario{
+                width: 100px;
+                padding: 0.5rem 0rem 0.5rem 0rem;
+            }
+
+            .emailFormulario{
+                width: 100px;
+                padding: 0.5rem 0rem 0.5rem 0rem;
+            }
+
+            .botonesContacto{
+                display: flex;
+
+                .enviarFormulario{
+                    padding: 1rem;
+                    border: 1rem;
+                }
+
+                .restablecerFormulario{
+                    padding: 1rem;
+                    border: 1rem;
+                }
+            }
 
         }
     }

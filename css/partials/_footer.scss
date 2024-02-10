@@ -2,7 +2,7 @@ footer{
     
     .pie{
             grid-area: pie;
-            background-color: #AF9177;
+            background-color: $colorFooter;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -14,7 +14,7 @@ footer{
             .copyright{
                 
                 h3{
-                    color: #FCF6E6;
+                    color: $colorTitulos;
                     text-decoration: none;
                 }
             }

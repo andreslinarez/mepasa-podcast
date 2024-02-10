@@ -1,4 +1,121 @@
 main{
+    @media (max-width: 1200px) {
+        .grillaSobrenosotros{   
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+            grid-template-areas: 
+                    "tituloSobrenosotros"
+                    "adri"
+                    "descripcionAdri"
+                    "pao"
+                    "descripcionPao"
+                    "mariana"
+                    "descripcionMari"
+            ;
+            justify-items: center;
+            align-items: start;
+            gap: 1rem;
+        
+            .tituloSobrenosotros{
+                grid-area: tituloSobrenosotros;
+                padding-top: 1rem;
+            }
+        
+            .adri{
+                grid-area: adri;
+        
+                .fotoPresentacion{
+                        width: 300px;
+                        max-width: 100%;
+                }
+            }
+        
+            .descripcionAdri{
+                grid-area: descripcionAdri;
+            }
+        
+            .pao{
+                grid-area: pao;
+        
+                .fotoPresentacion{
+                        width: 300px;
+                        max-width: 100%;
+                }
+            }
+        
+            .descripcionPao{
+                grid-area: descripcionPao;
+            }
+        
+            .mariana{
+                grid-area: mariana;
+        
+                .fotoPresentacion{
+                    width: 300px;
+                    max-width: 100%;
+                }
+            }
+        
+            .descripcionMari{
+                grid-area: descripcionMari;
+            }
+        }
+
+        .grillaProductos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "tituloProductos tituloProductos"
+            "textoProductos  textoProductos"
+            "cursoRelaciones libroRelacionarse"
+            "cursoPersonal   libroPersonal"
+            "cursoParejas    libroParejas"
+            ;
+            justify-items: center;
+            align-items: center;
+            gap: 1rem;
+
+            .vacioProductos{
+                grid-area: vacioProductos;
+            }
+
+            .tituloProductos{
+                grid-area: tituloProductos;
+            }
+
+            .textoProductos{
+                grid-area: textoProductos;
+            }
+
+            .cursoRelaciones{
+                grid-area: cursoRelaciones;
+            }
+
+            .cursoParejas{
+                grid-area: cursoParejas;
+            }
+
+            .cursoPersonal{
+                grid-area: cursoPersonal;
+            }
+
+            .libroParejas{
+                grid-area: libroParejas;
+            }
+
+            .libreoRelacionarse{
+                grid-area: libroRelacionarse;
+            }
+
+            .libroPersonal{
+                grid-area: libroPersonal;
+            }
+
+        }
+    }
+
     @media (max-width: 920px) {
 
         .grillaContacto{
@@ -89,69 +206,6 @@ main{
             }
 
         }
-
-        .grillaSobrenosotros{   
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
-            grid-template-areas: 
-                    "tituloSobrenosotros"
-                    "adri"
-                    "descripcionAdri"
-                    "pao"
-                    "descripcionPao"
-                    "mariana"
-                    "descripcionMari"
-            ;
-            justify-items: center;
-            align-items: start;
-            gap: 1rem;
-        
-            .tituloSobrenosotros{
-                grid-area: tituloSobrenosotros;
-                padding-top: 1rem;
-            }
-        
-            .adri{
-                grid-area: adri;
-        
-                .fotoPresentacion{
-                        width: 300px;
-                        max-width: 100%;
-                }
-            }
-        
-            .descripcionAdri{
-                grid-area: descripcionAdri;
-            }
-        
-            .pao{
-                grid-area: pao;
-        
-                .fotoPresentacion{
-                        width: 300px;
-                        max-width: 100%;
-                }
-            }
-        
-            .descripcionPao{
-                grid-area: descripcionPao;
-            }
-        
-            .mariana{
-                grid-area: mariana;
-        
-                .fotoPresentacion{
-                    width: 300px;
-                    max-width: 100%;
-                }
-            }
-        
-            .descripcionMari{
-                grid-area: descripcionMari;
-            }
-        }
-        
         
         .grillaEpisodios{   
             display: grid;
@@ -261,6 +315,5 @@ main{
                 }
             }
         }
-        }
-        
+        }       
 }
