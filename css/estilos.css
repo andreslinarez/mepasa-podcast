@@ -350,7 +350,7 @@ div a {
     grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr;
     grid-template-areas: "tituloProductos tituloProductos" "textoProductos  textoProductos" "cursoRelaciones libroRelacionarse" "cursoPersonal   libroPersonal" "cursoParejas    libroParejas";
     justify-items: center;
-    align-items: center;
+    align-items: auto;
     gap: 1rem;
   }
   main .grillaProductos .vacioProductos {
